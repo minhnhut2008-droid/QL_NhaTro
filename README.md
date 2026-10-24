@@ -23,3 +23,7 @@ Xem `dong-bo/HUONG-DAN-DONG-BO.md`. Cần tạo một dự án Supabase miễn p
 - Phòng được lưu đúng theo **ký hiệu** trong file (chữ, số, dấu), ví dụ `P.101`, `A2`, `B-7`, `3A`. Chữ "Phòng" ở đầu được bỏ, chữ hoa và chữ thường coi như nhau.
 - Nhận diện cột Excel dựa trên cả tiêu đề lẫn nội dung từng cột, mỗi trường chỉ gán cho một cột, hiện độ tin cậy và lý do. Cột đỏ (dưới 70%) cần bạn kiểm tra.
 - Dòng bị bỏ qua khi nhập (thiếu họ tên, số định danh sai, thiếu tên nhà trọ) được liệt kê theo số dòng ở bảng "Kết quả nhập".
+
+## 16 trường nhập từ Excel
+Họ tên, Ngày sinh, Giới tính, Số định danh, Số điện thoại, Địa chỉ_Tỉnh/TP, Địa chỉ_Xã/Phường/Đặc khu, Địa chỉ_Ấp/Thôn, Địa chỉ_Cụ thể, Loại nơi ở, Tên nơi ở, Ngày đến, Ngày dự kiến đi, Số phòng, Loại cư trú, Tình trạng cư trú.
+Bắt buộc có Họ tên, Số định danh và tên nhà trọ (cột Tên nơi ở hoặc nhập tay). Tải file mẫu ngay trong app (tab Nhập, nút **Tải file Excel mẫu**). File xuất từ app dùng đúng các cột này nên xuất xong có thể nhập lại.
