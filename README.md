@@ -27,3 +27,8 @@ Xem `dong-bo/HUONG-DAN-DONG-BO.md`. Cần tạo một dự án Supabase miễn p
 ## 16 trường nhập từ Excel
 Họ tên, Ngày sinh, Giới tính, Số định danh, Số điện thoại, Địa chỉ_Tỉnh/TP, Địa chỉ_Xã/Phường/Đặc khu, Địa chỉ_Ấp/Thôn, Địa chỉ_Cụ thể, Loại nơi ở, Tên nơi ở, Ngày đến, Ngày dự kiến đi, Số phòng, Loại cư trú, Tình trạng cư trú.
 Bắt buộc có Họ tên, Số định danh và tên nhà trọ (cột Tên nơi ở hoặc nhập tay). Tải file mẫu ngay trong app (tab Nhập, nút **Tải file Excel mẫu**). File xuất từ app dùng đúng các cột này nên xuất xong có thể nhập lại.
+
+## Số định danh và nhiều nhà trọ trong một file
+- Số định danh chỉ lấy **ký tự số**, bỏ qua mọi ký tự khác (dấu cách, gạch, dấu nháy, chữ như "CCCD:"). Đủ 12 số (hoặc 9 số CMND cũ) thì nhận; 11 số được bù số 0 đầu. Excel đổi số sang dạng khoa học (E+) thì app báo rõ dòng nào lỗi.
+- Tên nhà trọ được so khớp **chính xác** (không phân biệt chữ hoa thường và khoảng trắng thừa, nhưng phân biệt dấu): "Thanh", "Thanh Long", "Bùi Thanh Long", "Thạnh" là các nhà trọ khác nhau. Chỉ khi hai tên chỉ khác tiền tố "Nhà trọ/Nhà nghỉ" thì app hỏi có gộp không.
+- Tên nhà trọ lấy từ cột Tên nơi ở (nhận cả "Tên nơi ở/nhà trọ", "Cơ sở lưu trú"...). Một file nhiều nhà trọ thì mỗi dòng tự lưu vào đúng nhà, nhà chưa có tự tạo. Ô gộp trống lấy theo dòng trên. File không có cột tên nơi ở nhưng có các dòng tiêu đề nhà trọ xen giữa thì dùng các dòng đó.
