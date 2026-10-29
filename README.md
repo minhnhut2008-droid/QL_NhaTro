@@ -22,7 +22,7 @@ Xem `dong-bo/HUONG-DAN-DONG-BO.md`. Cần tạo một dự án Supabase miễn p
 ## Phòng và nhập Excel
 - Phòng được lưu đúng theo **ký hiệu** trong file (chữ, số, dấu), ví dụ `P.101`, `A2`, `B-7`, `3A`. Chữ "Phòng" ở đầu được bỏ, chữ hoa và chữ thường coi như nhau.
 - Nhận diện cột Excel dựa trên cả tiêu đề lẫn nội dung từng cột, mỗi trường chỉ gán cho một cột, hiện độ tin cậy và lý do. Cột đỏ (dưới 70%) cần bạn kiểm tra.
-- Dòng bị bỏ qua khi nhập (thiếu họ tên, số định danh sai, thiếu tên nhà trọ) được liệt kê theo số dòng ở bảng "Kết quả nhập".
+- Dòng không nhận được khi nhập (thiếu họ tên, số định danh thiếu hoặc sai ký tự, thiếu tên nhà trọ) được liệt kê theo số dòng ở bảng "Kết quả nhập". Bấm **Chọn / sửa / đưa vào thủ công** để tích chọn dòng, sửa thông tin từng dòng rồi đưa vào danh sách. Dòng còn thiếu hoặc sai số định danh vẫn vào được và gắn nhãn **Cần bổ sung**; mở người đó, bấm **Sửa thông tin** để chỉnh đầy đủ. Danh sách dòng chờ xử lý chỉ giữ đến khi tải lại trang, có nút mở lại ở tab Nhập.
 
 ## 16 trường nhập từ Excel
 Họ tên, Ngày sinh, Giới tính, Số định danh, Số điện thoại, Địa chỉ_Tỉnh/TP, Địa chỉ_Xã/Phường/Đặc khu, Địa chỉ_Ấp/Thôn, Địa chỉ_Cụ thể, Loại nơi ở, Tên nơi ở, Ngày đến, Ngày dự kiến đi, Số phòng, Loại cư trú, Tình trạng cư trú.
